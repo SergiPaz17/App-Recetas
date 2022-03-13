@@ -42,6 +42,9 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+
+    readJson();
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -53,11 +56,6 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(25),
         child: Column(
           children: [
-            ElevatedButton(
-              child: const Text('Load Data'),
-              onPressed: readJson,
-            ),
-
             // Display the data loaded from sample.json
             _items.isNotEmpty
                 ? Expanded(
@@ -74,6 +72,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               Column(
                                 children: [
+                                  Image.asset(_items[index]["Imagen"]),
                                   Text(_items[index]["Ingrediente1"]),
                                   Text(_items[index]["Ingrediente2"]),
                                   Text(_items[index]["Ingrediente3"]),
