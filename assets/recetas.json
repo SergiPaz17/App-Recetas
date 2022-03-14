@@ -1,28 +1,10 @@
 {
     "items": [
         {
-            "id": "p1",
-            "nombre": "Prueba1",
-            "descripcion": "Prueba de receta 1",
-            "Imagen": "/elden.jpg",
-            "Ingrediente1": "Ingrediente1",
-            "Ingrediente2": "Ingrediente2",
-            "Ingrediente3": "Ingrediente3",
-            "Ingrediente4": "Ingrediente4",
-            "Ingrediente5": "Ingrediente5",
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
-
-
-        },
-        {
-            "id": "p2",
-            "nombre": "Prueba2",
-            "descripcion": "Prueba de receta 2",
-            "Imagen": "/elden.jpg",
+            "id": "1",
+            "nombre": "Anborgesa",
+            "descripcion": "Anborgesa",
+            "Imagen": "/hamburguesa.jpg",
             "Ingrediente1": "Ingrediente1",
             "Ingrediente2": "Ingrediente2",
             "Ingrediente3": "Ingrediente3",
@@ -35,7 +17,23 @@
             "Paso5": "Paso5"
         },
         {
-            "id": "p3",
+            "id": "2",
+            "nombre": "Kebabo",
+            "descripcion": "Kebabo",
+            "Imagen": "/kebab.jpg",
+            "Ingrediente1": "Ingrediente1",
+            "Ingrediente2": "Ingrediente2",
+            "Ingrediente3": "Ingrediente3",
+            "Ingrediente4": "Ingrediente4",
+            "Ingrediente5": "Ingrediente5",
+            "Paso1": "Paso1",
+            "Paso2": "Paso2",
+            "Paso3": "Paso3",
+            "Paso4": "Paso4",
+            "Paso5": "Paso5"
+        },
+        {
+            "id": "3",
             "nombre": "Prueba3",
             "descripcion": "Prueba de receta 3",
             "Imagen": "/elden.jpg",
@@ -51,9 +49,25 @@
             "Paso5": "Paso5"
         },
         {
-            "id": "p4",
+            "id": "4",
             "nombre": "Prueba4",
             "descripcion": "Prueba de receta 4",
+            "Imagen": "/elden.jpg",
+            "Ingrediente1": "Ingrediente1",
+            "Ingrediente2": "Ingrediente2",
+            "Ingrediente3": "Ingrediente3",
+            "Ingrediente4": "Ingrediente4",
+            "Ingrediente5": "Ingrediente5",
+            "Paso1": "Paso1",
+            "Paso2": "Paso2",
+            "Paso3": "Paso3",
+            "Paso4": "Paso4",
+            "Paso5": "Paso5"
+        },
+        {
+            "id": "5",
+            "nombre": "Prueba5",
+            "descripcion": "Prueba de receta 5",
             "Imagen": "/elden.jpg",
             "Ingrediente1": "Ingrediente1",
             "Ingrediente2": "Ingrediente2",

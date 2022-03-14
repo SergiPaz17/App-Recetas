@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:recetas_cocina/cards.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
@@ -42,7 +45,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     readJson();
 
     return Scaffold(
@@ -56,36 +58,35 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(25),
         child: Column(
           children: [
-            // Display the data loaded from sample.json
             _items.isNotEmpty
                 ? Expanded(
                     child: ListView.builder(
                       itemCount: _items.length,
                       itemBuilder: (context, index) {
                         return Card(
-                            margin: const EdgeInsets.all(25),
-                            child: Column(children: [
-                              ListTile(
-                                leading: Text(_items[index]["id"]),
-                                title: Text(_items[index]["nombre"]),
-                                subtitle: Text(_items[index]["descripcion"]),
-                              ),
-                              Column(
-                                children: [
-                                  Image.asset(_items[index]["Imagen"]),
-                                  Text(_items[index]["Ingrediente1"]),
-                                  Text(_items[index]["Ingrediente2"]),
-                                  Text(_items[index]["Ingrediente3"]),
-                                  Text(_items[index]["Ingrediente4"]),
-                                  Text(_items[index]["Ingrediente5"]),
-                                  Text(_items[index]["Paso1"]),
-                                  Text(_items[index]["Paso2"]),
-                                  Text(_items[index]["Paso3"]),
-                                  Text(_items[index]["Paso4"]),
-                                  Text(_items[index]["Paso5"]),
-                                ],
-                              )
-                            ]));
+                          margin: const EdgeInsets.all(25),
+                          child: InkWell(
+                              onTap: () {
+                                final route =
+                                    MaterialPageRoute(builder: (context) {
+                                  print(index);
+                                  return uwu();
+                                });
+                                Navigator.push(context, route);
+                              },
+                              child: Column(children: [
+                                ListTile(
+                                  leading: Text(_items[index]["id"]),
+                                  title: Text(_items[index]["nombre"]),
+                                  subtitle: Text(_items[index]["descripcion"]),
+                                ),
+                                Column(
+                                  children: [
+                                    Image.asset(_items[index]["Imagen"]),
+                                  ],
+                                )
+                              ])),
+                        );
                       },
                     ),
                   )

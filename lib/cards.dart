@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class uwu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,55 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: SingleChildScrollView(
               scrollDirection: Axis.vertical,
               child: Column(
-                children: [
-                  buildCard(),
-                  buildCard(),
-                  buildCard(),
-                  buildCard(),
-                  buildCard(),
-                  buildCard(),
-                  buildCard(),
-                ],
+                children: [],
               )),
-        ));
-  }
-
-  Card buildCard() {
-    var heading = 'Pedazo tortilla de patatas ';
-    var subheading = 'UwU';
-    var cardImage = NetworkImage(
-        'https://dlprivateserver.com/wp-content/uploads/2022/02/1646050251_Arbol-parlante-de-Elden-Ring-donde-encontrarlo-como-ayudar-a.jpg');
-    var supportingText = 'bla bla bla bla bla bla receta';
-    return Card(
-        elevation: 4.0,
-        child: Column(
-          children: [
-            ListTile(
-              title: Text(heading),
-              subtitle: Text(subheading),
-              //trailing: Icon(Icons.favorite_outline),
-            ),
-            Container(
-              height: 300.0,
-              child: Ink.image(
-                image: cardImage,
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(16.0),
-              alignment: Alignment.centerLeft,
-              child: Text(supportingText),
-            ),
-            ButtonBar(
-              children: [
-                TextButton(
-                  child: const Text('Abrir receta'),
-                  onPressed: () {/* ... */},
-                ),
-              ],
-            )
-          ],
         ));
   }
 }
