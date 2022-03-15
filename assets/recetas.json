@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "id": "1",
+            "id": "0",
             "nombre": "Anborgesa",
             "descripcion": "Anborgesa",
             "Imagen": "/hamburguesa.jpg",
@@ -17,7 +17,7 @@
             "Paso5": "Paso5"
         },
         {
-            "id": "2",
+            "id": "1",
             "nombre": "Kebabo",
             "descripcion": "Kebabo",
             "Imagen": "/kebab.jpg",
@@ -33,10 +33,26 @@
             "Paso5": "Paso5"
         },
         {
+            "id": "2",
+            "nombre": "Pizza",
+            "descripcion": "Pizza 3",
+            "Imagen": "/pizza.jpg",
+            "Ingrediente1": "Ingrediente1",
+            "Ingrediente2": "Ingrediente2",
+            "Ingrediente3": "Ingrediente3",
+            "Ingrediente4": "Ingrediente4",
+            "Ingrediente5": "Ingrediente5",
+            "Paso1": "Paso1",
+            "Paso2": "Paso2",
+            "Paso3": "Paso3",
+            "Paso4": "Paso4",
+            "Paso5": "Paso5"
+        },
+        {
             "id": "3",
-            "nombre": "Prueba3",
-            "descripcion": "Prueba de receta 3",
-            "Imagen": "/elden.jpg",
+            "nombre": "Risotto",
+            "descripcion": "Risotto 4",
+            "Imagen": "/risotto.jpg",
             "Ingrediente1": "Ingrediente1",
             "Ingrediente2": "Ingrediente2",
             "Ingrediente3": "Ingrediente3",
@@ -50,22 +66,6 @@
         },
         {
             "id": "4",
-            "nombre": "Prueba4",
-            "descripcion": "Prueba de receta 4",
-            "Imagen": "/elden.jpg",
-            "Ingrediente1": "Ingrediente1",
-            "Ingrediente2": "Ingrediente2",
-            "Ingrediente3": "Ingrediente3",
-            "Ingrediente4": "Ingrediente4",
-            "Ingrediente5": "Ingrediente5",
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
-        },
-        {
-            "id": "5",
             "nombre": "Prueba5",
             "descripcion": "Prueba de receta 5",
             "Imagen": "/elden.jpg",

@@ -1,25 +1,28 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
-import 'package:recetas_cocina/cards.dart';
+import 'package:recetas_cocina/infoRecetas.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       // Hide the debug banner
+      darkTheme: ThemeData(
+        colorScheme: const ColorScheme.dark(),
+      ),
       debugShowCheckedModeBanner: false,
       title: 'UwU',
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }
@@ -67,16 +70,15 @@ class _HomePageState extends State<HomePage> {
                           margin: const EdgeInsets.all(25),
                           child: InkWell(
                               onTap: () {
-                                final route =
-                                    MaterialPageRoute(builder: (context) {
-                                  print(index);
-                                  return uwu();
-                                });
+                                final route = MaterialPageRoute(
+                                  builder: (context) {
+                                    return infoRecetas(index);
+                                  },
+                                );
                                 Navigator.push(context, route);
                               },
                               child: Column(children: [
                                 ListTile(
-                                  leading: Text(_items[index]["id"]),
                                   title: Text(_items[index]["nombre"]),
                                   subtitle: Text(_items[index]["descripcion"]),
                                 ),
