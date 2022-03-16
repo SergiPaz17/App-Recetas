@@ -67,12 +67,15 @@ class _HomePageState extends State<HomePage> {
                       itemCount: _items.length,
                       itemBuilder: (context, index) {
                         return Card(
+                          shape: const RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(20))),
                           margin: const EdgeInsets.all(25),
                           child: InkWell(
                               onTap: () {
                                 final route = MaterialPageRoute(
                                   builder: (context) {
-                                    return infoRecetas(index);
+                                    return InfoRecetas(index);
                                   },
                                 );
                                 Navigator.push(context, route);

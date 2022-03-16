@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:recetas_cocina/main.dart';
 
-class infoRecetas extends StatefulWidget {
+class InfoRecetas extends StatefulWidget {
   final int indexReceta;
-  infoRecetas(this.indexReceta, {Key? key}) : super(key: key);
+  const InfoRecetas(this.indexReceta);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _InformacionRecetas createState() => _InformacionRecetas();
 }
 
-class _MyHomePageState extends State<infoRecetas> {
+class _InformacionRecetas extends State<InfoRecetas> {
   List _items = [];
 
   // Fetch content from the json file
@@ -38,7 +39,6 @@ class _MyHomePageState extends State<infoRecetas> {
               scrollDirection: Axis.vertical,
               child: Column(children: [
                 ListTile(
-                  leading: Text(_items[widget.indexReceta]["id"]),
                   title: Text(_items[widget.indexReceta]["nombre"]),
                   subtitle: Text(_items[widget.indexReceta]["descripcion"]),
                 ),
@@ -48,9 +48,9 @@ class _MyHomePageState extends State<infoRecetas> {
                     const Padding(padding: EdgeInsets.all(10)),
                     const Text(
                       "Ingredientes",
-                      textAlign: TextAlign.center,
+                      textAlign: TextAlign.left,
                       textScaleFactor: 1.3,
-                    )
+                    ),
                   ],
                 )
               ])),
