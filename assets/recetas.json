@@ -5,11 +5,41 @@
             "nombre": "Anborgesa",
             "descripcion": "Anborgesa",
             "Imagen": "/hamburguesa.jpg",
-            "Ingrediente1": "Ingrediente1",
-            "Ingrediente2": "Ingrediente2",
-            "Ingrediente3": "Ingrediente3",
-            "Ingrediente4": "Ingrediente4",
-            "Ingrediente5": "Ingrediente5",
+			"ingredientes": [
+				{
+					"Nombre": "Calabacín",
+					"Cantidad": "3"
+				},
+				{
+					"Nombre": "Aceite de oliva virgen extra",
+					"Cantidad": "45 ml"
+				},
+				{
+					"Nombre": "Sal",
+					"Cantidad": "1 pizca"
+				},
+				{
+					"Nombre": "Leche",
+					"Cantidad": "500 ml"
+				},
+				{
+					"Nombre": "Huevo",
+					"Cantidad": "4"
+				},
+				{
+					"Nombre": "Harina de trigo",
+					"Cantidad": "150g"
+				},
+				{
+					"Nombre": "Mantequilla",
+					"Cantidad": "5g"
+				},
+				{
+					"Nombre": "Primienta negra molida",
+					"Cantidad": "Poca cantidad"
+				}
+			],
+
             "Paso1": "Paso1",
             "Paso2": "Paso2",
             "Paso3": "Paso3",

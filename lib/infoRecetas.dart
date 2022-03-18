@@ -4,9 +4,11 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:recetas_cocina/main.dart';
 
+// ignore: must_be_immutable
 class InfoRecetas extends StatefulWidget {
-  final int indexReceta;
-  const InfoRecetas(this.indexReceta);
+  int indexRecetas = 0;
+
+  InfoRecetas(this.indexRecetas, {Key? key}) : super(key: key);
 
   @override
   _InformacionRecetas createState() => _InformacionRecetas();
@@ -14,7 +16,6 @@ class InfoRecetas extends StatefulWidget {
 
 class _InformacionRecetas extends State<InfoRecetas> {
   List _items = [];
-
   // Fetch content from the json file
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('/recetas.json');
@@ -27,7 +28,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
   @override
   Widget build(BuildContext context) {
     readJson();
-    String title = _items[widget.indexReceta]["nombre"];
+    String title = _items[widget.indexRecetas]["nombre"];
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black45,
@@ -39,20 +40,21 @@ class _InformacionRecetas extends State<InfoRecetas> {
               scrollDirection: Axis.vertical,
               child: Column(children: [
                 ListTile(
-                  title: Text(_items[widget.indexReceta]["nombre"]),
-                  subtitle: Text(_items[widget.indexReceta]["descripcion"]),
+                  title: Text(_items[widget.indexRecetas]["nombre"]),
+                  subtitle: Text(_items[widget.indexRecetas]["descripcion"]),
                 ),
                 Column(
                   children: [
-                    Image.asset(_items[widget.indexReceta]["Imagen"]),
+                    Image.asset(_items[widget.indexRecetas]["Imagen"]),
                     const Padding(padding: EdgeInsets.all(10)),
                     const Text(
                       "Ingredientes",
                       textAlign: TextAlign.left,
                       textScaleFactor: 1.3,
                     ),
+                    Text(""),
                   ],
-                )
+                ),
               ])),
         ));
   }

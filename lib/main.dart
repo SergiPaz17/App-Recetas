@@ -6,6 +6,7 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
+bool? a;
 void main() {
   runApp(MyApp());
 }
@@ -37,7 +38,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List _items = [];
 
-  // Fetch content from the json file
+  //* Fetch content from the json file
   Future<void> readJson() async {
     final String response = await rootBundle.loadString('/recetas.json');
     final data = await json.decode(response);
@@ -49,7 +50,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     readJson();
-
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -73,12 +73,12 @@ class _HomePageState extends State<HomePage> {
                           margin: const EdgeInsets.all(25),
                           child: InkWell(
                               onTap: () {
-                                final route = MaterialPageRoute(
-                                  builder: (context) {
-                                    return InfoRecetas(index);
-                                  },
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => InfoRecetas(index),
+                                  ),
                                 );
-                                Navigator.push(context, route);
                               },
                               child: Column(children: [
                                 ListTile(
