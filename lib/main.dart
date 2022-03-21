@@ -1,18 +1,16 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:recetas_cocina/infoRecetas.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
-bool? a;
+import 'infoRecetas.dart';
+
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({Key? key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +20,6 @@ class MyApp extends StatelessWidget {
         colorScheme: const ColorScheme.dark(),
       ),
       debugShowCheckedModeBanner: false,
-      title: 'UwU',
       home: const HomePage(),
     );
   }
@@ -40,7 +37,8 @@ class _HomePageState extends State<HomePage> {
 
   //* Fetch content from the json file
   Future<void> readJson() async {
-    final String response = await rootBundle.loadString('/recetas.json');
+    final String response =
+        await rootBundle.loadString('assets/JSON/recetas.json');
     final data = await json.decode(response);
     setState(() {
       _items = data["items"];
@@ -50,6 +48,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     readJson();
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -58,7 +57,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(15),
         child: Column(
           children: [
             _items.isNotEmpty
