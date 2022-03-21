@@ -4,7 +4,7 @@
             "id": "0",
             "nombre": "Anborgesa",
             "descripcion": "Anborgesa",
-            "Imagen": "assets/Images/hamburguesa.jpg",
+            "Imagen": "assets/Images/rape.jpg",
 			"ingredientes": [
 				{
 					"Nombre": "Rodajas de rape",
@@ -40,192 +40,257 @@
 				}
 			],
 
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
+			"pasos": [
+				{
+					"paso": "Pelamos las patatas y cortamos en cuartos no muy grandes."
+				},				
+				{
+					"paso": "Pelamos los 2 dientes de ajo y los machacamos en un mortero o los picamos muy finitos. Queremos su sabor y olor, no encontrarlos en las patatas."
+				},
+				{
+					"paso": "En un recipiente apto para cocinar al microondas, añadimos las patatas, el aceite de oliva virgen extra, las pimientas, sal y las hierbas provenzales."
+				},
+				{
+					"paso": "Removemos todo con un cucharón o con las manos para mezclar todo bien y que se junten todos los ingredientes."
+				},
+				{
+					"paso": "Metemos al micro durante 15-20 minutos a máxima temperatura. El recipiente debe estar cubierto por la tapa del micro, pues va a salir bastante agua que sueltan las patatas en la cocción."
+				},
+				{
+					"paso": "Una vez hechas, dejamos reposar unos 5 minutos antes de servir en el plato. Podemos tunear este tipo de patatas a nuestro gusto y con las especias que más nos gusten."
+				},
+				{
+					"paso": "Limpiamos el lomo de rape quitando telillas que quedan pegadas a la carne. Cortamos en rodajas similares para que todos nuestros comensales tengan la misma cantidad en el plato."
+				},
+				{
+					"paso": "Este pescado suelta mucha agua y queremos que nos queden dos porciones majas. Con un papel absorbente o un trapo de algodón retiramos los restos de humedad que pueda soltar el pescado. Salpimentamos y preparamos para hacer a la plancha."
+				},
+				{
+					"paso": "Añadimos 2 cucharadas de aceite de oliva virgen extra a la sartén. Cuando esté muy caliente echamos el pescado y el tomillo con cuidado, no os queméis."
+				},
+				{
+					"paso": "Doramos sin que se cocine mucho, sólo para sellar la piel y conseguir que nos quede jugoso por dentro, con un minuto y medio por cada lado es más que suficiente."
+				},
+				{
+					"paso": "En la vuelta del pescado añadimos el romero y tapamos la sartén. Apagamos el fuego y dejamos que repose un minuto más en la misma. Soltará un poquito de salsita con la que regaremos el pescado y las patatas en el plato."
+				},
+				{
+					"paso": "Montamos el plato colocando los trozos de rape con su salsa y las patatas."
+				},
+				{
+					"paso": "Decoramos con el romero y tomillo que hemos empleado en la preparación para dar el toque verde al plato que marca la diferencia."
+				}
+
+
+
+
+			]
         },
         {
             "id": "1",
-            "nombre": "Kebabo",
-            "descripcion": "Kebabo",
-            "Imagen": "assets/Images/kebab.jpg",
+            "nombre": "Ternera al roquefort",
+            "descripcion": "Filetes de ternera con salsa roquefort",
+            "Imagen": "assets/Images/bisteque.jpg",
 			"ingredientes": [
 				{
-					"Nombre": "Calabacín",
-					"Cantidad": "3"
-				},
-				{
-					"Nombre": "Aceite de oliva virgen extra",
-					"Cantidad": "45 ml"
-				},
-				{
-					"Nombre": "Sal",
-					"Cantidad": "1 pizca"
-				},
-				{
-					"Nombre": "Leche",
-					"Cantidad": "500 ml"
-				},
-				{
-					"Nombre": "Huevo",
+					"Nombre": "Filetes de terenra (No muy gruesos)",
 					"Cantidad": "4"
 				},
 				{
-					"Nombre": "Harina de trigo",
-					"Cantidad": "150g"
+					"Nombre": "Nata para cocinar",
+					"Cantidad": "100 ml"
 				},
 				{
-					"Nombre": "Mantequilla",
-					"Cantidad": "5g"
+					"Nombre": "Queso roquefort",
+					"Cantidad": "50 gr"
 				},
 				{
-					"Nombre": "Primienta negra molida",
-					"Cantidad": "Poca cantidad"
+					"Nombre": "Aceite de oliva",
+					"Cantidad": ""
+				},
+				{
+					"Nombre": "Sal",
+					"Cantidad": ""
+				},
+				{
+					"Nombre": "Cebolla",
+					"Cantidad": "1/2 "
+				},
+				{
+					"Nombre": "Pimienta negra molida",
+					"Cantidad": "Al gusto"
 				}
 			],
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
+			"pasos": [
+				{
+					"paso": "Para preparar la ternera al roquefort, empezamos poniendo en un cazo la nata para cocinar y llevándola a ebullición."
+				},
+				{
+					"paso": "No dejamos de remover para que no se pegue la nata ni se queme. Añadimos entonces una pizca de sal y el queso roquefort troceado."
+				},
+				{
+					"paso": "Cuando el queso esté derretido reservamos la salsa."
+				},
+				{
+					"paso": "Pelamos la cebolla y la picamos muy fina. La ponemos a fuego lento en una sartén con una pizca de sal y pimienta negra molida."
+				},
+				{
+					"paso": "Agregamos entonces sobre la cebolla la ternera y la doramos, dejando que el jugo de la ternera se mezcle con la cebolla."
+				},
+				{
+					"paso": "Retiramos los filetes de ternera y añadimos la mezcla de nata y queso a la sartén. Mezclamos la salsa de la ternera al roquefort y la llevamos a hervir. Trituramos luego la salsa hasta que quede muy fina."
+				},
+				{
+					"paso": "Añadimos los filetes de ternera al roquefort dentro de la sartén con la salsa y dejamos que se empape del sabor."
+				},
+				{
+					"paso": "Servimos caliente y con salsa por encima de la carne."
+				}
+			]
         },
         {
             "id": "2",
-            "nombre": "Pizza",
-            "descripcion": "Pizza 3",
-            "Imagen": "assets/Images/pizza.jpg",
+            "nombre": "Tarta de queso",
+            "descripcion": "Tarta de queso",
+            "Imagen": "assets/Images/queso.jpg",
 			"ingredientes": [
 				{
-					"Nombre": "Calabacín",
-					"Cantidad": "3"
-				},
-				{
-					"Nombre": "Aceite de oliva virgen extra",
-					"Cantidad": "45 ml"
-				},
-				{
-					"Nombre": "Sal",
-					"Cantidad": "1 pizca"
-				},
-				{
-					"Nombre": "Leche",
-					"Cantidad": "500 ml"
-				},
-				{
-					"Nombre": "Huevo",
-					"Cantidad": "4"
-				},
-				{
-					"Nombre": "Harina de trigo",
-					"Cantidad": "150g"
+					"Nombre": "Galletas tipo María",
+					"Cantidad": "200 gr"
 				},
 				{
 					"Nombre": "Mantequilla",
-					"Cantidad": "5g"
+					"Cantidad": "120 gr"
 				},
 				{
-					"Nombre": "Primienta negra molida",
-					"Cantidad": "Poca cantidad"
+					"Nombre": "Cacahuetes con miel o otro fruto seco",
+					"Cantidad": "1 paquete"
+				},
+				{
+					"Nombre": "Nata liquida montar 35% materia grasa ",
+					"Cantidad": "800 gr"
+				},
+				{
+					"Nombre": "Azucar",
+					"Cantidad": "100 gr"
+				},
+				{
+					"Nombre": "Sobre de cuajada",
+					"Cantidad": "2 sobres"
+				},
+				{
+					"Nombre": "Queso de untar (estilo Queso Philadelphia)",
+					"Cantidad": "500 gr"
+				},
+				{
+					"Nombre": "Mermelada o Confitura de fresas",
+					"Cantidad": ""
 				}
 			],
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
+			"pasos": [
+				{
+					"paso": "Trocearemos las galletas en pequeñas porciones para triturar en el robot de cocina con la trituradora eléctrica, hasta hacerlas polvo. Una vez picadas mezclaremos con la mantequilla y los cacahuetes de miel previamente troceados. Formaremos una masa que nos sirva como base para la tarta de queso fría."
+				},
+				{
+					"paso": "Si queremos sacar la tarta por completo del molde, colocaremos un papel del hornear en la base del mismo tamaño que la  base recortaremos con unas tijeras. Colocaremos la masa creada con las galletas y la mantequilla en la base del molde. A continuación cubrir toda la base de forma homogénea, nos ayudaremos de una espátula de silicona o con la palma de la mano y los dedos iremos cubriendo toda la base del molde. Yo emplee otra base mas pequeña para aplastar bien la base y que quedara del todo nivelada."
+				},
+				{
+					"paso": "Dejaremos enfriar en la nevera hasta que este lo suficientemente resistente como para soportar el peso de nuestra tarta de queso. Unos 15/20 minutos serán suficientes para conseguir una base estable y firme."
+				},
+				{
+					"paso": "Calentaremos la nata en un cazo a fuego lento, iremos incorporando el azúcar y removeremos con la nata, mezclaremos con el queso,  incorporar  las cuajadas, que habremos diluido en un poco de leche. Aconsejo seguir las recomendaciones del fabricante para diluir las cuajadas."
+				},
+				{
+					"paso": "Remover todos los ingredientes hasta su completa disolución, en el momento que la mezcla comience a hervir (es importante que la cuajada rompa a hervir, ya que si no lo hace, es posible que la tarta no cuaje) apartar inmediatamente para que no se pegue.  El calor excesivo puede llegar a quemar la mezcla y dejar un sabor a quemado que la estropearía por completo."
+				},
+				{
+					"paso": "Una vez conseguida la mezcla para la tarta de queso fría, la echaremos en el molde que tenemos ya preparado con la base de galleta. Dejaremos enfriar en la nevera unas 6 horas aproximadamente y una vez cuajada  la tarta de queso fría decoraremos la superficie de la tarta con nuestra cobertura preferida en este caso, mermelada de fresa."
+				},
+				{
+					"paso": "Des- moldar la tarta una vez que hayamos decorado la superficie y ya estará lista para servir."
+				}
+			]
         },
         {
             "id": "3",
             "nombre": "Risotto",
-            "descripcion": "Risotto 4",
+            "descripcion": "Risotto ",
             "Imagen": "assets/Images/risotto.jpg",
 			"ingredientes": [
 				{
-					"Nombre": "Calabacín",
-					"Cantidad": "3"
+					"Nombre": "Arroz para Risotto Scotti",
+					"Cantidad": "320 gr"
 				},
 				{
-					"Nombre": "Aceite de oliva virgen extra",
-					"Cantidad": "45 ml"
+					"Nombre": "caldo de verduras (aprox. 1 litro)",
+					"Cantidad": "1L"
 				},
 				{
-					"Nombre": "Sal",
-					"Cantidad": "1 pizca"
+					"Nombre": "Setas variadas champiñones, \n portobello seta de cultivo",
+					"Cantidad": "400 gr"
 				},
 				{
-					"Nombre": "Leche",
-					"Cantidad": "500 ml"
-				},
-				{
-					"Nombre": "Huevo",
-					"Cantidad": "4"
-				},
-				{
-					"Nombre": "Harina de trigo",
-					"Cantidad": "150g"
+					"Nombre": "Cebolla grande",
+					"Cantidad": "1"
 				},
 				{
 					"Nombre": "Mantequilla",
-					"Cantidad": "5g"
+					"Cantidad": "40 gr"
 				},
 				{
-					"Nombre": "Primienta negra molida",
-					"Cantidad": "Poca cantidad"
-				}
-			],
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
-        },
-        {
-            "id": "4",
-            "nombre": "Prueba5",
-            "descripcion": "Prueba de receta 5",
-            "Imagen": "assets/Images/elden.jpg",
-			"ingredientes": [
+					"Nombre": "Vino blanco",
+					"Cantidad": "1/2 vaso"
+				},
 				{
-					"Nombre": "Calabacín",
-					"Cantidad": "3"
+					"Nombre": "Diente de ajo grande",
+					"Cantidad": "1"
+				},
+				{
+					"Nombre": "Queso parmigiano reggiano rallado",
+					"Cantidad": "100 gr"
 				},
 				{
 					"Nombre": "Aceite de oliva virgen extra",
-					"Cantidad": "45 ml"
+					"Cantidad": "50 ml"
 				},
 				{
-					"Nombre": "Sal",
-					"Cantidad": "1 pizca"
-				},
-				{
-					"Nombre": "Leche",
-					"Cantidad": "500 ml"
-				},
-				{
-					"Nombre": "Huevo",
-					"Cantidad": "4"
-				},
-				{
-					"Nombre": "Harina de trigo",
-					"Cantidad": "150g"
-				},
-				{
-					"Nombre": "Mantequilla",
-					"Cantidad": "5g"
-				},
-				{
-					"Nombre": "Primienta negra molida",
-					"Cantidad": "Poca cantidad"
+					"Nombre": "Sal y pimienta negra recién molida",
+					"Cantidad": "Al gusto"
 				}
 			],
-            "Paso1": "Paso1",
-            "Paso2": "Paso2",
-            "Paso3": "Paso3",
-            "Paso4": "Paso4",
-            "Paso5": "Paso5"
+			"pasos": [
+				{
+					"paso": "Lo primero que necesitamos es caldo de verduras: limpiamos y picamos en cuartos las verduras. En una cazuela, echamos 1,5 litros de agua y hervimos. Añadimos las verduras, salamos a nuestro gusto y cocinamos al menos 30 minutos, a fuego medio. Con un papel de cocina, limpiamos el sombrero de los champiñones y portobellos."
+				},
+				{
+					"paso": "Cortamos la parte inferior del tallo, que suele traer algo de tierra. Una vez procesados, los laminamos y por otro lado. Cortamos también las setas de cultivo en pequeños trozos (de similar tamaño). Tened en cuenta que luego en la cazuela disminuirán mucho su tamaño."
+				},
+				{
+					"paso": "Cortamos la cebolla en brunoise fina, y la pochamos en un sartén grande (o una cazuela ancha y plana) con aceite de oliva virgen extra. Cuando vemos que está casi transparente, añadimos una nuez de mantequilla (20 gramos), que mezclamos bien con el aceite. Procurad que la cebolla no se os queme."
+				},
+				{
+					"paso": "Vamos ahora a tostar el arroz. Lo repartimos por toda la cazuela, mezclamos con el resto y dejamos que se cocine 2-3 minutos. Vertemos el vino blanco, removemos ligeramente y dejamos que se evapore el alcohol."
+				},
+				{
+					"paso": "Picamos el diente de ajo bien finito. En una sartén aparte, con un poco de aceite de oliva, ponemos a “bailar” el ajo y añadimos el mix las setas."
+				},
+				{
+					"paso": "Tapamos y dejamos cocinar a fuego medio unos 5 minutos. Salamos al gusto. Pasamos las setas listas, con el jugo que han soltado, a la cazuela del arroz. Mezclamos bien, echamos un cucharón de caldo de verduras y comenzamos a remover el arroz, en movimientos continuados (en círculo)."
+				},
+				{
+					"paso": "En el momento que veáis que el caldo esté casi consumido, añadimos un nuevo cucharón, y volvemos a remover el arroz. Este proceso lo vamos a repetir varias, añadiendo más caldo, pero siempre procurando que nunca llegue a quedarse sin líquido."
+				},
+				{
+					"paso": "Como en el caso de la pasta, los paquetes de este tipo de arroz italiano, marcan el tiempo de cocción recomendado. En este caso, el arroz arborio se hará en 15-16 minutos. Lo ideal es que el arroz quede “al dente”, ligeramente duro. Aunque aquí cada uno puede cocinarlo un poco más en función de sus gustos."
+				},
+				{
+					"paso": "Cuando llegamos al punto óptimo de cocción del arroz, toca darle el toque final de cremosidad, lo que los italianos llaman “mantecare”. Retiramos la cazuela del fuego. Añadimos una nuez de mantequilla (20 gr.) y 80-100 g. de queso Parmigiano Reggiano rallado."
+				},
+				{
+					"paso": "Removemos con movimientos envolventes para que se vaya fundiendo el queso, y el arroz vaya adquiriendo cremosidad. Y para degustarlo, no hay tiempo que perder. Lo servimos caliente en la mesa, aprovechando ese punto cremoso tan delicioso."
+				}
+			]
         }
-        
         
     ]
 }
