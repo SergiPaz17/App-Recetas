@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:math';
 import 'dart:ui';
 
@@ -5,6 +6,8 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+
+int sumar = 1;
 
 // ignore: must_be_immutable
 class InfoRecetas extends StatefulWidget {
@@ -20,6 +23,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
   List _items = [];
   List _ingredientes = [];
   List _pasos = [];
+
   // Fetch content from the json file
   Future<void> readJson() async {
     final String response =
@@ -37,6 +41,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
   Widget build(BuildContext context) {
     readJson();
     String title = _items[widget.indexRecetas]["nombre"];
+    String a;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black45,
@@ -53,6 +58,26 @@ class _InformacionRecetas extends State<InfoRecetas> {
                 "Ingredientes",
                 textScaleFactor: (2),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                      onPressed: () {
+                        if (sumar <= 5) {
+                          sumar++;
+                        }
+                      },
+                      icon: const Icon(Icons.add)),
+                  IconButton(
+                      onPressed: () {
+                        if (sumar >= 2) {
+                          sumar--;
+                        }
+                      },
+                      icon: const Icon(Icons.remove)),
+                ],
+              ),
+              Text("Recetas para " + sumar.toString() + " personas"),
               const Divider(),
               _ingredientes.isNotEmpty
                   ? ListView.builder(
@@ -63,9 +88,11 @@ class _InformacionRecetas extends State<InfoRecetas> {
                       itemBuilder: (context, index) {
                         return Row(children: [
                           Text(_ingredientes[index]["Nombre"] + ": "),
-                          Text(_ingredientes[index]["Cantidad"] + " "),
                           const Spacer(),
-                          const Icon(Icons.shopping_cart),
+                          Text((_ingredientes[index]["Cantidad"] * sumar)
+                                  .toString() +
+                              " "),
+                          Text(_ingredientes[index]["Tipo"]),
                         ]);
                       },
                     )
@@ -132,15 +159,16 @@ class _InformacionRecetas extends State<InfoRecetas> {
                         );
                       },
                     ),
-              Container(
-                height: 500,
-                child: ListView.builder(
+              SizedBox(
+                height: 400,
+                child: PageView.builder(
+                  controller: PageController(viewportFraction: 1.1),
                   itemCount: _items.length,
                   itemBuilder: (context, index) {
                     return Card(
                       shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.all(Radius.circular(20))),
-                      margin: const EdgeInsets.all(25),
+                      margin: const EdgeInsets.all(20),
                       child: InkWell(
                           onTap: () {
                             Navigator.push(
@@ -157,7 +185,9 @@ class _InformacionRecetas extends State<InfoRecetas> {
                             ),
                             Column(
                               children: [
-                                Image.asset(_items[index]["Imagen"]),
+                                Image.asset(
+                                  _items[index]["Imagen"],
+                                ),
                               ],
                             )
                           ])),

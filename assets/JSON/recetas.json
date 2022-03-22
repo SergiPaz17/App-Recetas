@@ -2,41 +2,51 @@
     "items": [
         {
             "id": "0",
-            "nombre": "Anborgesa",
-            "descripcion": "Anborgesa",
+            "nombre": "Rodajas de rape",
+            "descripcion": "Rodajas de rape con tomillo y romero",
             "Imagen": "assets/Images/rape.jpg",
 			"ingredientes": [
 				{
 					"Nombre": "Rodajas de rape",
-					"Cantidad": "Unas 8"
+					"Cantidad": 8,
+					"Tipo": "u."
 				},
 				{
 					"Nombre": "Ramas de tomillo",
-					"Cantidad": "2"
+					"Cantidad": 2,
+					"Tipo": "u."
 				},
+
 				{
 					"Nombre": "Ramas de romero",
-					"Cantidad": "2"
+					"Cantidad": 2,
+					"Tipo": "u."
 				},
 				{
 					"Nombre": "Patatas",
-					"Cantidad": "500 gr"
+					"Cantidad": 500 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Dientes de ajo",
-					"Cantidad": "2"
+					"Cantidad": 2,
+					"Tipo": "u."
+
 				},
 				{
 					"Nombre": "Sal",
-					"Cantidad": "(Al gusto)"
+					"Cantidad": "",
+					"Tipo": "(Al gusto)"
 				},
 				{
 					"Nombre": "Oliva virgen Extra",
-					"Cantidad": "50ml"
+					"Cantidad": 50,
+					"Tipo": "ml."
 				},
 				{
 					"Nombre": "Primienta negra molida",
-					"Cantidad": "Al gusto"
+					"Cantidad": "",
+					"Tipo": "(Al gusto)"
 				}
 			],
 
@@ -94,31 +104,38 @@
 			"ingredientes": [
 				{
 					"Nombre": "Filetes de terenra (No muy gruesos)",
-					"Cantidad": "4"
+					"Cantidad": 4,
+					"Tipo": "u."
 				},
 				{
 					"Nombre": "Nata para cocinar",
-					"Cantidad": "100 ml"
+					"Cantidad": 100 ,
+					"Tipo": "ml."
 				},
 				{
 					"Nombre": "Queso roquefort",
-					"Cantidad": "50 gr"
+					"Cantidad": 50 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Aceite de oliva",
-					"Cantidad": ""
+					"Cantidad": "",
+					"Tipo": "(Al gusto)"
 				},
 				{
 					"Nombre": "Sal",
-					"Cantidad": ""
+					"Cantidad": "",
+					"Tipo": "(Al gusto)"
 				},
 				{
 					"Nombre": "Cebolla",
-					"Cantidad": "1/2 "
+					"Cantidad": "",
+					"Tipo": "1/2 u."
 				},
 				{
 					"Nombre": "Pimienta negra molida",
-					"Cantidad": "Al gusto"
+					"Cantidad": "",
+					"Tipo": "(Al gusto)"
 				}
 			],
 			"pasos": [
@@ -156,35 +173,44 @@
 			"ingredientes": [
 				{
 					"Nombre": "Galletas tipo María",
-					"Cantidad": "200 gr"
+					"Cantidad": 200,
+					"Tipo": "gr."
+
 				},
 				{
 					"Nombre": "Mantequilla",
-					"Cantidad": "120 gr"
+					"Cantidad": 120,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Cacahuetes con miel o otro fruto seco",
-					"Cantidad": "1 paquete"
+					"Cantidad": 1,
+					"Tipo": "paquete"
 				},
 				{
 					"Nombre": "Nata liquida montar 35% materia grasa ",
-					"Cantidad": "800 gr"
+					"Cantidad": 800 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Azucar",
-					"Cantidad": "100 gr"
+					"Cantidad": 100 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Sobre de cuajada",
-					"Cantidad": "2 sobres"
+					"Cantidad": "",
+					"Tipo": "2 sobres"
 				},
 				{
 					"Nombre": "Queso de untar (estilo Queso Philadelphia)",
-					"Cantidad": "500 gr"
+					"Cantidad": 500 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Mermelada o Confitura de fresas",
-					"Cantidad": ""
+					"Cantidad": "",
+					"Tipo": ""
 				}
 			],
 			"pasos": [
@@ -219,43 +245,53 @@
 			"ingredientes": [
 				{
 					"Nombre": "Arroz para Risotto Scotti",
-					"Cantidad": "320 gr"
+					"Cantidad": 320 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "caldo de verduras (aprox. 1 litro)",
-					"Cantidad": "1L"
+					"Cantidad": 1 ,
+					"Tipo": "l."
 				},
 				{
 					"Nombre": "Setas variadas champiñones, \n portobello seta de cultivo",
-					"Cantidad": "400 gr"
+					"Cantidad": 400 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Cebolla grande",
-					"Cantidad": "1"
+					"Cantidad": 1,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Mantequilla",
-					"Cantidad": "40 gr"
+					"Cantidad": 40 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Vino blanco",
-					"Cantidad": "1/2 vaso"
+					"Cantidad": "",
+					"Tipo": "1/2 vaso"
 				},
 				{
 					"Nombre": "Diente de ajo grande",
-					"Cantidad": "1"
+					"Cantidad": "",
+					"Tipo": "1."
 				},
 				{
 					"Nombre": "Queso parmigiano reggiano rallado",
-					"Cantidad": "100 gr"
+					"Cantidad": 100 ,
+					"Tipo": "gr."
 				},
 				{
 					"Nombre": "Aceite de oliva virgen extra",
-					"Cantidad": "50 ml"
+					"Cantidad": 50 ,
+					"Tipo": "ml."
 				},
 				{
 					"Nombre": "Sal y pimienta negra recién molida",
-					"Cantidad": "Al gusto"
+					"Cantidad": "",
+					"Tipo": "Al gusto"
 				}
 			],
 			"pasos": [
