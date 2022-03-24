@@ -1,13 +1,17 @@
-import 'dart:ffi';
-import 'dart:math';
-import 'dart:ui';
+import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
 
+import 'main.dart';
+
 int sumar = 1;
+bool theme = true;
+bool isActive = false;
+bool isCheck = false;
+bool a = true;
 
 // ignore: must_be_immutable
 class InfoRecetas extends StatefulWidget {
@@ -24,7 +28,6 @@ class _InformacionRecetas extends State<InfoRecetas> {
   List _ingredientes = [];
   List _pasos = [];
 
-  // Fetch content from the json file
   Future<void> readJson() async {
     final String response =
         await rootBundle.loadString('assets/JSON/recetas.json');
@@ -41,23 +44,67 @@ class _InformacionRecetas extends State<InfoRecetas> {
   Widget build(BuildContext context) {
     readJson();
     String title = _items[widget.indexRecetas]["nombre"];
-    String a;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black45,
         title: Text(title),
+        actions: [
+          IconButton(
+              icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
+                  ? Icons.dark_mode
+                  : Icons.light_mode),
+              onPressed: () {
+                MyApp.themeNotifier.value =
+                    MyApp.themeNotifier.value == ThemeMode.light
+                        ? ThemeMode.dark
+                        : ThemeMode.light;
+              }),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => MyApp(),
+                  ),
+                );
+              },
+              icon: const Icon(Icons.home))
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(2),
           child: Column(
             children: [
-              Image.asset(_items[widget.indexRecetas]["Imagen"]),
-              const Divider(),
-              const Text(
-                "Ingredientes",
-                textScaleFactor: (2),
+              Visibility(
+                child: Column(
+                  children: [
+                    Image.asset(_items[widget.indexRecetas]["Imagen"]),
+                    const Divider(),
+                    const Text(
+                      "Ingredientes",
+                      textScaleFactor: (2),
+                    ),
+                  ],
+                ),
+                visible: isActive,
               ),
+              Visibility(
+                child: Column(
+                  children: [
+                    const Divider(),
+                    const Text(
+                      "rurgfhuszhdjlh",
+                      textScaleFactor: (2),
+                    ),
+                  ],
+                ),
+                visible: !isActive,
+              ),
+              IconButton(
+                  onPressed: () {
+                    isActive = !isActive;
+                  },
+                  icon: const Icon(Icons.youtube_searched_for)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -124,6 +171,16 @@ class _InformacionRecetas extends State<InfoRecetas> {
                             thickness: 2,
                           ),
                           Text(_pasos[index]["paso"]),
+                          CheckboxListTile(
+                            controlAffinity: ListTileControlAffinity.platform,
+                            checkColor: Colors.white,
+                            value: isCheck,
+                            onChanged: (value) {
+                              setState(() {
+                                isCheck = value!;
+                              });
+                            },
+                          ),
                           const Text(""),
                         ]);
                       },
@@ -159,6 +216,13 @@ class _InformacionRecetas extends State<InfoRecetas> {
                         );
                       },
                     ),
+              const Divider(
+                thickness: 2,
+              ),
+              const Text("Otras recetas", textScaleFactor: (2)),
+              const Divider(
+                thickness: 2,
+              ),
               SizedBox(
                 height: 400,
                 child: PageView.builder(

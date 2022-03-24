@@ -11,17 +11,23 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
+  static final ValueNotifier<ThemeMode> themeNotifier =
+      ValueNotifier(ThemeMode.light);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      // Hide the debug banner
-      darkTheme: ThemeData(
-        colorScheme: const ColorScheme.dark(),
-      ),
-      debugShowCheckedModeBanner: false,
-      home: const HomePage(),
-    );
+    return ValueListenableBuilder<ThemeMode>(
+        valueListenable: themeNotifier,
+        builder: (_, ThemeMode currentMode, __) {
+          return MaterialApp(
+            // Remove the debug banner
+            debugShowCheckedModeBanner: false,
+            title: 'App Recetas',
+            theme: ThemeData(primarySwatch: Colors.grey),
+            darkTheme: ThemeData.dark(),
+            themeMode: currentMode,
+            home: const HomePage(),
+          );
+        });
   }
 }
 
@@ -55,6 +61,18 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           'Recetas UwU',
         ),
+        actions: [
+          IconButton(
+              icon: Icon(MyApp.themeNotifier.value == ThemeMode.light
+                  ? Icons.dark_mode
+                  : Icons.light_mode),
+              onPressed: () {
+                MyApp.themeNotifier.value =
+                    MyApp.themeNotifier.value == ThemeMode.light
+                        ? ThemeMode.dark
+                        : ThemeMode.light;
+              })
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(15),

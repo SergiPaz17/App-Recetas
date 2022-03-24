@@ -27,6 +27,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  youtube_player_flutter: ^7.0.0+7
 
 
 
@@ -45,7 +46,6 @@ flutter:
   uses-material-design: true
   assets:
   - assets/JSON/recetas.json
-  - assets/Images/elden.jpg
   - assets/Images/rape.jpg
   - assets/Images/bisteque.jpg
   - assets/Images/queso.jpg
