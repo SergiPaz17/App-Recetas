@@ -1,7 +1,6 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/services.dart';
 
@@ -10,7 +9,6 @@ import 'main.dart';
 int sumar = 1;
 bool theme = true;
 bool isActive = false;
-bool isCheck = false;
 bool a = true;
 
 // ignore: must_be_immutable
@@ -27,6 +25,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
   List _items = [];
   List _ingredientes = [];
   List _pasos = [];
+  List isCheck = [];
 
   Future<void> readJson() async {
     final String response =
@@ -37,6 +36,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
       _items = data["items"];
       _ingredientes = data["items"][widget.indexRecetas]["ingredientes"];
       _pasos = data["items"][widget.indexRecetas]["pasos"];
+      isCheck.add(false);
     });
   }
 
@@ -90,10 +90,10 @@ class _InformacionRecetas extends State<InfoRecetas> {
               ),
               Visibility(
                 child: Column(
-                  children: [
-                    const Divider(),
-                    const Text(
-                      "rurgfhuszhdjlh",
+                  children: const [
+                    Divider(),
+                    Text(
+                      "Video de la receta",
                       textScaleFactor: (2),
                     ),
                   ],
@@ -134,6 +134,11 @@ class _InformacionRecetas extends State<InfoRecetas> {
                       itemExtent: 40,
                       itemBuilder: (context, index) {
                         return Row(children: [
+                          IconButton(
+                              onPressed: () {
+                                launch(_ingredientes[index]["link"]);
+                              },
+                              icon: const Icon(Icons.shopping_cart)),
                           Text(_ingredientes[index]["Nombre"] + ": "),
                           const Spacer(),
                           Text((_ingredientes[index]["Cantidad"] * sumar)
@@ -156,11 +161,15 @@ class _InformacionRecetas extends State<InfoRecetas> {
                       itemCount: _pasos.length,
                       shrinkWrap: true,
                       itemBuilder: (context, index) {
+                        isCheck[index];
+                        int x = 0;
+                        x += index;
+                        x++;
                         return Column(children: [
                           Row(
                             children: [
                               Text(
-                                "Paso " + index.toString(),
+                                "Paso " + x.toString(),
                                 textScaleFactor: 1.2,
                                 style: const TextStyle(
                                     fontWeight: FontWeight.bold),
@@ -174,10 +183,10 @@ class _InformacionRecetas extends State<InfoRecetas> {
                           CheckboxListTile(
                             controlAffinity: ListTileControlAffinity.platform,
                             checkColor: Colors.white,
-                            value: isCheck,
+                            value: isCheck[index],
                             onChanged: (value) {
                               setState(() {
-                                isCheck = value!;
+                                isCheck[index] = !isCheck[index];
                               });
                             },
                           ),
@@ -224,9 +233,9 @@ class _InformacionRecetas extends State<InfoRecetas> {
                 thickness: 2,
               ),
               SizedBox(
-                height: 400,
+                height: 430,
                 child: PageView.builder(
-                  controller: PageController(viewportFraction: 1.1),
+                  controller: PageController(viewportFraction: 0.9),
                   itemCount: _items.length,
                   itemBuilder: (context, index) {
                     return Card(

@@ -9,44 +9,52 @@
 				{
 					"Nombre": "Rodajas de rape",
 					"Cantidad": 8,
-					"Tipo": "u."
+					"Tipo": "u.",
+					"link": "https://www.lasirena.es/es/pescado/1103-rodaja-de-rape-premium-8414532999992.html"
 				},
 				{
 					"Nombre": "Ramas de tomillo",
 					"Cantidad": 2,
-					"Tipo": "u."
+					"Tipo": "u.",
+					"link": "https://www.germigarden.com/es/tomillo/556010016-comprar-tomillo.html"
 				},
 
 				{
 					"Nombre": "Ramas de romero",
 					"Cantidad": 2,
-					"Tipo": "u."
+					"Tipo": "u.",
+					"link": "https://fruteriaonline.es/producto/romero-fresco/"
 				},
 				{
 					"Nombre": "Patatas",
 					"Cantidad": 500 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.alcampo.es/compra-online/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/patatas/c/W170201"
 				},
 				{
 					"Nombre": "Dientes de ajo",
 					"Cantidad": 2,
-					"Tipo": "u."
+					"Tipo": "u.",
+					"link": "https://www.alcampo.es/compra-online/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/ajos/c/WAjo"
 
 				},
 				{
 					"Nombre": "Sal",
 					"Cantidad": "",
-					"Tipo": "(Al gusto)"
+					"Tipo": "(Al gusto)",
+					"link": "https://www.hipercor.es/supermercado/alimentacion/alimentacion-general/sal/"
 				},
 				{
-					"Nombre": "Oliva virgen Extra",
+					"Nombre": "Aceite de oliva virgen Extra",
 					"Cantidad": 50,
-					"Tipo": "ml."
+					"Tipo": "ml.",
+					"link": "https://aceitedelcampo.com/aceite-de-oliva-virgen-extra/"
 				},
 				{
 					"Nombre": "Primienta negra molida",
 					"Cantidad": "",
-					"Tipo": "(Al gusto)"
+					"Tipo": "(Al gusto)",
+					"link": "https://www.amazon.es/Pimientas-Molidas/b?ie=UTF8&node=6349371031"
 				}
 			],
 
@@ -103,37 +111,44 @@
 				{
 					"Nombre": "Filetes de terenra (No muy gruesos)",
 					"Cantidad": 4,
-					"Tipo": "u."
+					"Tipo": "u.",
+					"link": "https://www.solobuey.com/comprar/filetes-de-ternera/"
 				},
 				{
 					"Nombre": "Nata para cocinar",
 					"Cantidad": 100 ,
-					"Tipo": "ml."
+					"Tipo": "ml.",
+					"link": "https://www.dia.es/compra-online/despensa/lacteos-y-huevos/nata/cf/uso+para-cocinar"
 				},
 				{
 					"Nombre": "Queso roquefort",
 					"Cantidad": 50 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.carrefour.es/supermercado/productos-frescos/quesos/azules-y-roquefort/cat20174/c"
 				},
 				{
 					"Nombre": "Aceite de oliva",
 					"Cantidad": "",
-					"Tipo": "(Al gusto)"
+					"Tipo": "(Al gusto)",
+					"link": "https://aceitedelcampo.com/aceite-de-oliva-virgen-extra/"
 				},
 				{
 					"Nombre": "Sal",
 					"Cantidad": "",
-					"Tipo": "(Al gusto)"
+					"Tipo": "(Al gusto)",
+					"link": "https://www.hipercor.es/supermercado/alimentacion/alimentacion-general/sal/"				
 				},
 				{
 					"Nombre": "Cebolla",
 					"Cantidad": "",
-					"Tipo": "1/2 u."
+					"Tipo": "1/2 u.",
+					"link": "https://www.alcampo.es/compra-online/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/cebollas/c/WCebollas"
 				},
 				{
 					"Nombre": "Pimienta negra molida",
 					"Cantidad": "",
-					"Tipo": "(Al gusto)"
+					"Tipo": "(Al gusto)",
+					"link": "https://www.amazon.es/Pimientas-Molidas/b?ie=UTF8&node=6349371031"
 				}
 			],
 			"pasos": [
@@ -172,43 +187,51 @@
 				{
 					"Nombre": "Galletas tipo María",
 					"Cantidad": 200,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.alcampo.es/compra-online/alimentacion/desayuno-y-merienda/galletas/galletas-maria/c/W100805001"
 
 				},
 				{
 					"Nombre": "Mantequilla",
 					"Cantidad": 120,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.hipercor.es/supermercado/lacteos/mantequilla-y-margarina/"
 				},
 				{
 					"Nombre": "Cacahuetes con miel o otro fruto seco",
 					"Cantidad": 1,
-					"Tipo": "paquete"
+					"Tipo": "paquete",
+					"link": "https://www.amazon.es/Cacahuete-frito-miel-1-Kg/dp/B01G59QJAY"
 				},
 				{
 					"Nombre": "Nata liquida montar 35% materia grasa ",
 					"Cantidad": 800 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link":"https://www.carrefour.es/supermercado/la-despensa/lacteos/nata/cat20096/c"
 				},
 				{
 					"Nombre": "Azucar",
 					"Cantidad": 100 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link" :"https://www.hipercor.es/supermercado/alimentacion/alimentacion-general/azucar-y-edulcorantes/"
 				},
 				{
 					"Nombre": "Sobre de cuajada",
 					"Cantidad": "",
-					"Tipo": "2 sobres"
+					"Tipo": "2 sobres",
+					"link":"https://www.dia.es/compra-online/despensa/desayunos-y-dulces/preparacion-de-postres/p/27367"
 				},
 				{
 					"Nombre": "Queso de untar (estilo Queso Philadelphia)",
 					"Cantidad": 500 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link":"https://www.carrefour.es/supermercado/productos-frescos/quesos/crema-de-queso/cat690003/c"
 				},
 				{
 					"Nombre": "Mermelada o Confitura de fresas",
 					"Cantidad": "",
-					"Tipo": ""
+					"Tipo": "",
+					"link":"https://www.hipercor.es/supermercado/desayunos-dulces-y-pan/mermelada-confituras-y-miel/mermelada-y-confituras-diversas/"
 				}
 			],
 			"pasos": [
@@ -244,53 +267,62 @@
 				{
 					"Nombre": "Arroz para Risotto Scotti",
 					"Cantidad": 320 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.elcorteingles.es/alimentacion/marcas/riso-scotti/supermercado/alimentacion-general/arroz/arroz-risotto/"
 				},
 				{
 					"Nombre": "caldo de verduras (aprox. 1 litro)",
 					"Cantidad": 1 ,
-					"Tipo": "l."
+					"Tipo": "l.",
+					"link":"https://www.hipercor.es/supermercado/alimentacion/alimentacion-general/caldos-sopas-pures-y-gazpachos/caldo-de-verdura/"
 				},
 				{
 					"Nombre": "Setas variadas champiñones, \n portobello seta de cultivo",
 					"Cantidad": 400 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.laumont.shop/collections/setas-silvestres-frescas"
 				},
 				{
 					"Nombre": "Cebolla grande",
 					"Cantidad": 1,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.alcampo.es/compra-online/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/cebollas/c/WCebollas"
 				},
 				{
 					"Nombre": "Mantequilla",
 					"Cantidad": 40 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.hipercor.es/supermercado/lacteos/mantequilla-y-margarina/"
 				},
 				{
 					"Nombre": "Vino blanco",
 					"Cantidad": "",
-					"Tipo": "1/2 vaso"
+					"Tipo": "1/2 vaso",
+					"link":"https://agrobotigacovides.com/es/10-vinos?gclid=CjwKCAjwopWSBhB6EiwAjxmqDSKi4TbDlvlIk7Yj2ZFP1VLb7Pp7x4xBrKYIU4Y9-z_CVpYqJTs5TxoCdl4QAvD_BwE"
 				},
 				{
 					"Nombre": "Diente de ajo grande",
 					"Cantidad": "",
-					"Tipo": "1."
+					"Tipo": "1.",
+					"link": "https://www.alcampo.es/compra-online/frescos/verduras-y-hortalizas/patatas-ajos-y-cebollas/ajos/c/WAjo"
 				},
 				{
 					"Nombre": "Queso parmigiano reggiano rallado",
 					"Cantidad": 100 ,
-					"Tipo": "gr."
+					"Tipo": "gr.",
+					"link": "https://www.elcorteingles.es/supermercado/0110118395400122-galbani-queso-italiano-rallado-parmigiano-reggiano-dop-bolsa-60-g/"
 				},
 				{
 					"Nombre": "Aceite de oliva virgen extra",
 					"Cantidad": 50 ,
-					"Tipo": "ml."
+					"Tipo": "ml.",
+					"link": "https://aceitedelcampo.com/aceite-de-oliva-virgen-extra/"
 				},
 				{
 					"Nombre": "Sal y pimienta negra recién molida",
 					"Cantidad": "",
-					"Tipo": "Al gusto"
-				}
+					"Tipo": "Al gusto",
+					"link": "https://www.hipercor.es/supermercado/alimentacion/alimentacion-general/sal/"				}
 			],
 			"pasos": [
 				{
