@@ -90,9 +90,9 @@ class _InformacionRecetas extends State<InfoRecetas> {
               ),
               Visibility(
                 child: Column(
-                  children: const [
-                    Divider(),
-                    Text(
+                  children: [
+                    const Divider(),
+                    const Text(
                       "rurgfhuszhdjlh",
                       textScaleFactor: (2),
                     ),
