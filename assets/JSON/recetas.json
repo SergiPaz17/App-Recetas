@@ -5,6 +5,7 @@
             "nombre": "Rodajas de rape",
             "descripcion": "Rodajas de rape con tomillo y romero",
             "Imagen": "assets/Images/rape.jpg",
+			"Video": "assets/Videos/rape.mp4",
 			"ingredientes": [
 				{
 					"Nombre": "Rodajas de rape",

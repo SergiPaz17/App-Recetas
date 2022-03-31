@@ -1,20 +1,22 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:flutter/services.dart';
+import 'package:video_player/video_player.dart';
 
 import 'main.dart';
 
 int sumar = 1;
 bool theme = true;
-bool isActive = false;
+bool isActive = true;
 bool a = true;
 
 // ignore: must_be_immutable
 class InfoRecetas extends StatefulWidget {
   final int indexRecetas;
-
   const InfoRecetas(this.indexRecetas, {Key? key}) : super(key: key);
 
   @override
@@ -26,6 +28,9 @@ class _InformacionRecetas extends State<InfoRecetas> {
   List _ingredientes = [];
   List _pasos = [];
   List isCheck = [];
+  String x = "";
+
+  late VideoPlayerController _controller;
 
   Future<void> readJson() async {
     final String response =
@@ -37,12 +42,34 @@ class _InformacionRecetas extends State<InfoRecetas> {
       _ingredientes = data["items"][widget.indexRecetas]["ingredientes"];
       _pasos = data["items"][widget.indexRecetas]["pasos"];
       isCheck.add(false);
+      x = _items[widget.indexRecetas]["Video"];
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    _controller = VideoPlayerController.asset('assets/Videos/rape.mp4');
+
+    _controller.addListener(() {
+      setState(() {});
+    });
+    _controller.setLooping(true);
+    _controller.initialize().then((_) => setState(() {}));
+    //_controller.play();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     readJson();
+
     String title = _items[widget.indexRecetas]["nombre"];
     return Scaffold(
       appBar: AppBar(
@@ -90,9 +117,27 @@ class _InformacionRecetas extends State<InfoRecetas> {
               ),
               Visibility(
                 child: Column(
-                  children: const [
-                    Divider(),
-                    Text(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.only(top: 20.0),
+                    ),
+                    const Text('With assets mp4'),
+                    Container(
+                      padding: const EdgeInsets.all(20),
+                      child: AspectRatio(
+                        aspectRatio: _controller.value.aspectRatio,
+                        child: Stack(
+                          alignment: Alignment.bottomCenter,
+                          children: <Widget>[
+                            VideoPlayer(_controller),
+                            VideoProgressIndicator(_controller,
+                                allowScrubbing: true),
+                          ],
+                        ),
+                      ),
+                    ),
+                    const Divider(),
+                    const Text(
                       "Video de la receta",
                       textScaleFactor: (2),
                     ),
@@ -105,6 +150,16 @@ class _InformacionRecetas extends State<InfoRecetas> {
                     isActive = !isActive;
                   },
                   icon: const Icon(Icons.youtube_searched_for)),
+              IconButton(
+                  onPressed: () {
+                    _controller.play();
+                  },
+                  icon: const Icon(Icons.play_arrow)),
+              IconButton(
+                  onPressed: () {
+                    _controller.pause();
+                  },
+                  icon: const Icon(Icons.pause)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
