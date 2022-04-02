@@ -5,7 +5,7 @@
             "nombre": "Rodajas de rape",
             "descripcion": "Rodajas de rape con tomillo y romero",
             "Imagen": "assets/Images/rape.jpg",
-			"Video": "assets/Videos/rape.mp4",
+			"Video": "rape.mp4",
 			"ingredientes": [
 				{
 					"Nombre": "Rodajas de rape",
@@ -108,6 +108,7 @@
             "nombre": "Ternera al roquefort",
             "descripcion": "Filetes de ternera con salsa roquefort",
             "Imagen": "assets/Images/bisteque.jpg",
+			"Video": "assets/Videos/carneroquefort.mp4",
 			"ingredientes": [
 				{
 					"Nombre": "Filetes de terenra (No muy gruesos)",
@@ -184,6 +185,7 @@
             "nombre": "Tarta de queso",
             "descripcion": "Tarta de queso",
             "Imagen": "assets/Images/queso.jpg",
+			"Video": "assets/Videos/tartaqueso.mp4",
 			"ingredientes": [
 				{
 					"Nombre": "Galletas tipo María",
@@ -264,6 +266,7 @@
             "nombre": "Risotto",
             "descripcion": "Risotto ",
             "Imagen": "assets/Images/risotto.jpg",
+			"Video": "assets/Videos/risotto.mp4",
 			"ingredientes": [
 				{
 					"Nombre": "Arroz para Risotto Scotti",

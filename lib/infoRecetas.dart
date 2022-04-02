@@ -13,7 +13,7 @@ int sumar = 1;
 bool theme = true;
 bool isActive = true;
 bool a = true;
-
+late String x;
 // ignore: must_be_immutable
 class InfoRecetas extends StatefulWidget {
   final int indexRecetas;
@@ -28,7 +28,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
   List _ingredientes = [];
   List _pasos = [];
   List isCheck = [];
-  String x = "";
+
 
   late VideoPlayerController _controller;
 
@@ -47,10 +47,11 @@ class _InformacionRecetas extends State<InfoRecetas> {
   }
 
   @override
+
   void initState() {
     super.initState();
-
-    _controller = VideoPlayerController.asset('assets/Videos/rape.mp4');
+  
+   _controller = VideoPlayerController.asset('assets/Videos/rape.mp4');
 
     _controller.addListener(() {
       setState(() {});
@@ -90,7 +91,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => MyApp(),
+                    builder: (context) => const MyApp(),
                   ),
                 );
               },
@@ -120,8 +121,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
                   children: [
                     Container(
                       padding: const EdgeInsets.only(top: 20.0),
-                    ),
-                    const Text('With assets mp4'),
+                    ),     
                     Container(
                       padding: const EdgeInsets.all(20),
                       child: AspectRatio(
@@ -132,10 +132,29 @@ class _InformacionRecetas extends State<InfoRecetas> {
                             VideoPlayer(_controller),
                             VideoProgressIndicator(_controller,
                                 allowScrubbing: true),
+                            
                           ],
                         ),
                       ),
+
                     ),
+                    
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                      
+                        IconButton(
+                            onPressed: () {
+                             _controller.play();
+                              },
+                          icon: const Icon(Icons.play_arrow)),
+                          IconButton(
+                            onPressed: () {
+                            _controller.pause();
+                            },
+                          icon: const Icon(Icons.pause)),
+                    ]),
+                    
                     const Divider(),
                     const Text(
                       "Video de la receta",
@@ -150,16 +169,7 @@ class _InformacionRecetas extends State<InfoRecetas> {
                     isActive = !isActive;
                   },
                   icon: const Icon(Icons.youtube_searched_for)),
-              IconButton(
-                  onPressed: () {
-                    _controller.play();
-                  },
-                  icon: const Icon(Icons.play_arrow)),
-              IconButton(
-                  onPressed: () {
-                    _controller.pause();
-                  },
-                  icon: const Icon(Icons.pause)),
+             
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

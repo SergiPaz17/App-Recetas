@@ -3,19 +3,23 @@ def flutterPluginVersion = 'managed'
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+}
 
     defaultConfig {
         applicationId "com.example.app_recetas.host"
-        minSdkVersion 16
-        targetSdkVersion 30
+        minSdkVersion 17
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
 
     buildTypes {

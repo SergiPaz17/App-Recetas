@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Recetas UwU',
+          'Recetas',
         ),
         actions: [
           IconButton(
