@@ -53,9 +53,7 @@ flutter:
   - assets/Images/queso.jpg
   - assets/Images/risotto.jpg
   - assets/Videos/rape.mp4
-  - assets/Videos/risotto.mp4
-  - assets/Videos/tartaqueso.mp4
-  - assets/Videos/carneroquefort.mp4
+
 
   # To add Flutter specific assets to your application, add an assets section,
   # like this:

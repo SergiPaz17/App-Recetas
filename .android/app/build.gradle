@@ -9,9 +9,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    dependencies {
-    implementation 'com.android.support:multidex:1.0.3'
-}
 
     defaultConfig {
         applicationId "com.example.app_recetas.host"
@@ -20,6 +17,7 @@ android {
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
+
     }
 
     buildTypes {
